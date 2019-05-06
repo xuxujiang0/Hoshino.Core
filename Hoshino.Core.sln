@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hoshino.Core.Interface", "H
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hoshino.Core.Model", "Hoshino.Core.Model\Hoshino.Core.Model\Hoshino.Core.Model.csproj", "{D654A49C-545E-42B4-8BD5-6367F56A1AFC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hoshino.Core.DataAccess", "Hoshino.Core.DataAccess\Hoshino.Core.DataAccess\Hoshino.Core.DataAccess.csproj", "{ADC06A80-9399-4C3B-8538-C02D94028ED5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,10 @@ Global
 		{D654A49C-545E-42B4-8BD5-6367F56A1AFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D654A49C-545E-42B4-8BD5-6367F56A1AFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D654A49C-545E-42B4-8BD5-6367F56A1AFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADC06A80-9399-4C3B-8538-C02D94028ED5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADC06A80-9399-4C3B-8538-C02D94028ED5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADC06A80-9399-4C3B-8538-C02D94028ED5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADC06A80-9399-4C3B-8538-C02D94028ED5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +65,7 @@ Global
 		{4B97EEBC-5AC8-49EA-A034-43629743CF7E} = {C9F03AB9-7DF2-42DB-9D71-E0E7A8EA3F49}
 		{5EF566C6-44D5-458E-9064-CE71CAD4CCA8} = {C9F03AB9-7DF2-42DB-9D71-E0E7A8EA3F49}
 		{D654A49C-545E-42B4-8BD5-6367F56A1AFC} = {C9F03AB9-7DF2-42DB-9D71-E0E7A8EA3F49}
+		{ADC06A80-9399-4C3B-8538-C02D94028ED5} = {FC7AE879-039A-4F37-9B87-4A78510FC35E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {02DAC1D6-F99E-4E2E-873A-F3ECC680A325}

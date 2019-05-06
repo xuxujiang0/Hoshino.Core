@@ -34,8 +34,13 @@ namespace Hoshino.Core.Api
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                name: "default",
+                template: "v1/{controller}/{action}/{id?}");
 
-            app.UseMvc();
+            });
         }
     }
 }
