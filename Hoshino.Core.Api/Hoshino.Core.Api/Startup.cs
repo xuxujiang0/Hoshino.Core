@@ -10,7 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace Hoshino.Core
+namespace Hoshino.Core.Api
 {
     public class Startup
     {

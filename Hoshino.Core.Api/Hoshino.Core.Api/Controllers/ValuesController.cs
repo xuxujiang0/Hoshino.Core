@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Hoshino.Core.Controllers
+namespace Hoshino.Core.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

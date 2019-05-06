@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Core.DBHelper">
+      <HintPath>..\..\lib\Core.DBHelper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
