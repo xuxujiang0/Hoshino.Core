@@ -5,7 +5,12 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <OutputPath>E:\outCode\Hoshino\Hoshino.Core.Api\Hoshino.Core.Api\bin\Debug\</OutputPath>
+    <OutputPath>..\..\Hoshino.Core.Api\Hoshino.Core.Api\bin\Debug</OutputPath>
+    <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <OutputPath>..\..\Hoshino.Core.Api\Hoshino.Core.Api\bin\Release</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>

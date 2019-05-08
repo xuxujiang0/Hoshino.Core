@@ -15,7 +15,10 @@ namespace Hoshino.Core.Service
 
             dic["chain_id"] = chain_id;
 
-            dic["creation_date"] = DateTime.Now;
+            dic["creation_time"] = DateTime.Now;
+
+
+
 
             return SQLHelperFactory.Instance.ExecuteNonQuery("LogInfo_InsertLogInfo", dic) > 0;
         }
