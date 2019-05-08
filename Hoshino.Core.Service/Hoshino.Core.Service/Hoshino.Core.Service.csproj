@@ -9,13 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Core.DBHelper\Core.DBHelper.csproj" />
     <ProjectReference Include="..\..\Hoshino.Core.Interface\Hoshino.Core.Interface\Hoshino.Core.Interface.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="Core.DBHelper">
-      <HintPath>..\..\lib\Core.DBHelper.dll</HintPath>
-    </Reference>
   </ItemGroup>
 
 </Project>

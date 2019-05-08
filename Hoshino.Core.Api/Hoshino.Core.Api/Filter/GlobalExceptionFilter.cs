@@ -24,7 +24,7 @@ namespace Hoshino.Core.Api.Filter
             }
             else
             {
-                result = new ApiResult(ResultCode.Fail);
+                result = new ApiResult((int)ResultCode.Fail, context.Exception.Message);
             }
             Log4NetHelper.ErrorLog(context.Exception);
 
