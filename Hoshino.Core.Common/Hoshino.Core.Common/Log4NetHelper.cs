@@ -8,8 +8,9 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-using static Hoshino.Core.Common.Enum;
+using static Hoshino.Core.Common.SysEnum;
 
+[assembly: log4net.Config.XmlConfigurator(ConfigFile = "log4net.config", ConfigFileExtension = "config", Watch = true)]
 namespace Hoshino.Core.Common
 {
     public class Log4NetHelper
@@ -95,7 +96,7 @@ namespace Hoshino.Core.Common
             Task.Run(() => logDB.Info(msg));
         }
 
-        public static void DBLog(string json, string instertaceName, LogCallType callType)
+        public static void DBLog(string json, string instertaceName, LogType callType)
         {
             if (string.IsNullOrWhiteSpace(json)) return;
 
@@ -103,11 +104,11 @@ namespace Hoshino.Core.Common
 
 
             log_info log = new log_info();
-            log.id = Guid.NewGuid().ToString("N");
-            log.chain_id = context.Items["LogId"].ToString();
+            //log.id = Guid.NewGuid().ToString("N");
+            log.chain_id = GetChainId();
             log.content = json;
             log.interface_name = instertaceName;
-            log.call_type = (int)callType;
+            log.type = (int)callType;
             log.creation_time = DateTime.Now;
             log.ip = context.Request.Host.ToString();
             DBLog(log);

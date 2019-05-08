@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<HCIP.AjaxDataSetting>
+
+  <Data name="LogInfo_InsertLogInfo">
+    <SqlDefinition type="MySql" ConnStringName="mysqlConnection">
+      <SqlCommand>
+        <![CDATA[
+INSERT INTO `log_info`(`chain_id`,`creation_time`) VALUES(@@chain_id@@,@@creation_time@@);
+      ]]>
+      </SqlCommand>
+    </SqlDefinition>
+  </Data>
+</HCIP.AjaxDataSetting>

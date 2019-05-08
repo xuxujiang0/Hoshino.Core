@@ -20,6 +20,11 @@ namespace Hoshino.Core.Api
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseUrls("http://*:81")
+                .ConfigureAppConfiguration(config =>
+                {
+                    config.AddJsonFile("appsettings.json");
+                    config.AddCommandLine(args);
+                })
                 .UseStartup<Startup>();
     }
 }
