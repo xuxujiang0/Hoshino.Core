@@ -13,7 +13,7 @@ namespace Hoshino.Core.Api.Controllers
 
         public string HelloWorld()
         {
-            return "Hello World";
+            return "Hello World1";
         }
 
       
