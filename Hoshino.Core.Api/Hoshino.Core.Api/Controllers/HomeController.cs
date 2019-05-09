@@ -21,6 +21,14 @@ namespace Hoshino.Core.Api.Controllers
         }
         public string HelloWorld()
         {
+            //registerUserIn model_in = getRequestParam<registerUserIn>();
+
+            //Dictionary<string, object> dic = new Dictionary<string, object>();
+            //dic["id"] = Guid.NewGuid().ToString("N");
+            //dic["account"] = model_in.account;
+            //dic["password"] = model_in.password;
+            //dic["creation_user"] = model_in.account;
+
             string chain_id = Guid.NewGuid().ToString("N");
 
             bool result = LogInfoService.insertLogInfo(chain_id);
