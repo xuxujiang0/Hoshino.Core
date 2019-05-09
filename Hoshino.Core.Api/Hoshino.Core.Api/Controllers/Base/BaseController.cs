@@ -18,7 +18,7 @@ namespace Hoshino.Core.Api.Controllers.Base
         /// </summary>
         /// <typeparam name="T">对象类型</typeparam>
         /// <returns></returns>
-        protected T getRequestParam<T>() where T : class
+        protected T getRequestParam<T>() where T : class 
         {
             if (HttpContext.Items != null && HttpContext.Items.Count > 0 && HttpContext.Items.Keys.Contains("RequestJson"))
             {
