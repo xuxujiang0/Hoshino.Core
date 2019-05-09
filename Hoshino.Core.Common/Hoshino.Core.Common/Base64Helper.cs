@@ -19,7 +19,7 @@ namespace Hoshino.Core.Common
             try
             {
                 enString = Convert.ToBase64String(bytes);
-            }
+            } 
             catch
             {
                 enString = source;
