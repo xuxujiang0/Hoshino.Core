@@ -24,5 +24,12 @@ namespace Hoshino.Core.Common
             Info = 1,
             Error = 2
         }
+        public enum VCodeType
+        {
+            [Description("注册")]
+            Register = 1,
+            [Description("找回密码")]
+            GorgotPassword = 2
+        }
     }
 }
